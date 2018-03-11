@@ -9,7 +9,7 @@ import * as actions from '../reducers/actions'
 class ListItem extends  Component{
     
     renderDescription(){
-        if(this.props.library.id === this.props.selectedID){
+        if(this.props.expand){
             return (
                     <View>
                         <Text> { this.props.library.description } </Text>
@@ -38,7 +38,6 @@ class ListItem extends  Component{
         )
     }
 }
-
 const styles = {
     titleStyle:{
         fontSize:18,
@@ -46,8 +45,8 @@ const styles = {
     },
 }
 
-const mapState2props=(state)=>{
-    return { selectedID:state.selectedLibraryId }
+const mapState2props=(state,ownProp)=>{
+    return { expand:state.selectedLibraryId===ownProp.library.id }
 }
 
 export default connect(mapState2props,actions)(ListItem)
