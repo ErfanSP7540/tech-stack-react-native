@@ -1,0 +1,47 @@
+[
+    {
+        "id":0,
+        "title":"Webpack",
+        "description":"Webpack is an open-source JavaScript module bundler. Webpack takes modules with dependencies and generates static assets representing those modules. Wikipedia"
+    },
+    {
+        "id":1,
+        "title":"React",
+        "description":"In computing, React is a JavaScript library for building user interfaces. It is maintained by Facebook, Instagram and a community of individual developers and corporations. Wikipedia"
+    },
+    {
+        "id":2,
+        "title":"Redux",
+        "description":"Redux is an open-source JavaScript library designed for managing application state. It is primarily used together with React or Angular for building user interfaces. Wikipedia"
+    },
+    {
+        "id":3,
+        "title":"React-Redux",
+        "description":"As of React Native 0.18, React Redux 5.x should work with React Native. If you have any issues with React Redux 5.x on React Native, run npm ls react and make sure you don’t have a duplicate React installation in your node_modules. We recommend that you use npm@3.x which is better at avoiding these kinds of issues."
+    },
+    {
+        "id":4,
+        "title":"lodash",
+        "description":"Lodash is a JavaScript library which provides utility functions for common programming tasks using the functional programming paradigm. Wikipedia"
+    },
+    {
+        "id":5,
+        "title":"Redux-Thunk",
+        "description":"Note on 2.x Update. Most tutorials today assume Redux Thunk 1.x so you might run into an issue when running their code with 2.x. If you use Redux Thunk 2.x in CommonJS environment, don't forget to add .default to your import: - var ReduxThunk = require('redux-thunk') + var ReduxThunk = require('redux-thunk').default."
+    },
+    {
+        "id":6,
+        "title":"ESlint",
+        "description":"ESLint is an open source project originally created by Nicholas C. Zakas in June 2013. Its goal is to provide a pluggable linting utility for JavaScript."
+    },
+    {
+        "id":7,
+        "title":"Babel",
+        "description":"Babel is a tool that helps you write code in the latest version of JavaScript. When your supported environments don't support certain features natively, Babel will help you compile those features down to a supported version. In. // ES2015 arrow function [1, 2, 3].map((n) => n + 1);. Out. [1, 2, 3].map(function(n) { return n + 1; })"
+    },
+    {
+        "id":8,
+        "title":"Axios",
+        "description":" Axios is a Promise-based HTTP client for JavaScript which can be used in your front-end application and in your Node.js backend. By using Axios it’s easy to send asynchronous HTTP request to REST endpoints and perform CRUD operations. The Axios library can be used in your plain ..."
+    }
+]
