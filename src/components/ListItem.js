@@ -7,6 +7,18 @@ import * as actions from '../reducers/actions'
 
 
 class ListItem extends  Component{
+    
+    renderDescription(){
+        if(this.props.library.id === this.props.selectedID){
+            return (
+                    <View>
+                        <Text> { this.props.library.description } </Text>
+                    </View>
+                )
+        }    
+    }
+
+
     render(){
         const {title,id}=this.props.library;
 
@@ -19,6 +31,7 @@ class ListItem extends  Component{
                 <View>
                     <CardSection>
                         <Text style={styles.titleStyle}>{title}</Text>
+                        {this.renderDescription()}
                     </CardSection>
                 </View>
             </TouchableWithoutFeedback>
