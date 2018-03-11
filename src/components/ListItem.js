@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import {Text , View , TouchableWithoutFeedback} from 'react-native'
+import {Text , View , TouchableWithoutFeedback , LayoutAnimation } from 'react-native'
 import {CardSection} from './common'
 
 import {connect} from 'react-redux'
@@ -8,12 +8,15 @@ import * as actions from '../reducers/actions'
 
 class ListItem extends  Component{
     
+    componentWillUpdate(){
+        LayoutAnimation.spring()
+    }
     renderDescription(){
         if(this.props.expand){
             return (
-                    <View>
-                        <Text> { this.props.library.description } </Text>
-                    </View>
+                    <CardSection>
+                        <Text style={{paddingLeft:30,paddingRight:20}}> { this.props.library.description } </Text>
+                    </CardSection>
                 )
         }    
     }
@@ -31,8 +34,8 @@ class ListItem extends  Component{
                 <View>
                     <CardSection>
                         <Text style={styles.titleStyle}>{title}</Text>
-                        {this.renderDescription()}
                     </CardSection>
+                    {this.renderDescription()}
                 </View>
             </TouchableWithoutFeedback>
         )
